@@ -57,11 +57,6 @@ services:
   region: oregon
   env: docker
   dockerfilePath: ./temporal-cluster/server/auto-setup/Dockerfile
-  scaling:
-    minInstances: 1
-    maxInstances: 3
-    targetMemoryPercent: 80
-    targetCPUPercent: 80
   envVars:
   - fromGroup: temporal-shared
   - key: SERVICES
@@ -107,11 +102,6 @@ services:
   region: oregon
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
-  scaling:
-    minInstances: 1
-    maxInstances: 3
-    targetMemoryPercent: 80
-    targetCPUPercent: 80
   envVars:
   - fromGroup: temporal-shared
   - key: SERVICES
@@ -154,11 +144,6 @@ services:
   region: oregon
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
-  scaling:
-    minInstances: 1
-    maxInstances: 3
-    targetMemoryPercent: 80
-    targetCPUPercent: 80
   envVars:
   - fromGroup: temporal-shared
   - key: SERVICES
@@ -201,11 +186,6 @@ services:
   region: oregon
   env: docker
   dockerfilePath: ./temporal-cluster/server/Dockerfile
-  scaling:
-    minInstances: 1
-    maxInstances: 3
-    targetMemoryPercent: 80
-    targetCPUPercent: 80
   envVars:
   - fromGroup: temporal-shared
   # The worker service needs to wait for the history service to be up first,
