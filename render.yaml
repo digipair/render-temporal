@@ -237,7 +237,7 @@ services:
   dockerfilePath: ./temporal-cluster/web/Dockerfile
   envVars:
   - key: PORT
-    value: 8080
+    value: 8088
   - key: TEMPORAL_PERMIT_WRITE_API
     value: true
   - key: TEMPORAL_GRPC_HOST
